@@ -1,0 +1,11 @@
+name: fazal khan
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+  branches: [ "test" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
